@@ -9,6 +9,9 @@
 #include "bn_keypad.h"
 #include "bn_sprite_text_generator.h"
 #include "bn_bg_palettes.h"
+#include "bn_math.h"
+#include <bn_timers.h>
+
 
 #include "common_info.h"
 #include "bn_sprite_tiles_ptr.h"
@@ -18,7 +21,6 @@
 #include "bn_regular_bg_items_stage1.h"
 #include "common_variable_8x8_sprite_font.h"
 #include "bn_sprite_items_man.h"       //sprite header files
-
 
 
 
@@ -71,7 +73,9 @@ namespace
             }
 
             //this here is object testing, whenever an object needs to be seen for itself we must check whether the object functions as intended
-            if(sword.has_value() && ( (sword->x() - 8) < man.x() && man.x() < (sword->x() + 8)) && ( (sword->y() - 8) < man.y() && man.y() < (sword->y() + 8))){
+           
+            if(sword.has_value() && ((sqrt(man.x() - sword->x()) + sqrt(man.y() - sword->y())) >= 16))
+            {
                sword.reset();
                man.set_tiles(bn::sprite_items::man.tiles_item().create_tiles(1));
             }
@@ -127,11 +131,15 @@ namespace
                 man.set_y(man.y() + 1);
             }
 
+            
 
 
 
 
-            if(sword.has_value() && ( (sword->x() - 8) < man.x() && man.x() < (sword->x() + 8)) && ( (sword->y() - 8) < man.y() && man.y() < (sword->y() + 8))){
+
+
+            
+            if(sword.has_value() && ((sqrt(man.x() - sword->x())+ sqrt(man.y() - sword->y()) >= 16))){
                sword.reset();
                man.set_tiles(bn::sprite_items::man.tiles_item().create_tiles(knifeman));
             }

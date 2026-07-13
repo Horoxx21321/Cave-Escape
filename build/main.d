@@ -1,4 +1,4 @@
-main.o: C:/Users/hamed/desktop/gamejam/src/main.cpp \
+main.o: C:/Users/hamed/Desktop/gamejam/src/main.cpp \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_core.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_span.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_array.h \
@@ -54,26 +54,33 @@ main.o: C:/Users/hamed/desktop/gamejam/src/main.cpp \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_utf8_character.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_bg_palettes.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_palette_effect_type.h \
- C:/Users/hamed/desktop/gamejam/build/common_info.h \
+ C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_math.h \
+ C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_sin_lut.h \
+ C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_reciprocal_lut.h \
+ C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_rule_of_three_approximation.h \
+ C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_timers.h \
+ C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/hw/include/bn_hw_timer_constants.h \
+ C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_config_timer.h \
+ C:/Users/hamed/Desktop/gamejam/build/common_info.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_span.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_vector.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_sprite_ptr.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_string_view.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_sprite_tiles_ptr.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_regular_bg_ptr.h \
- C:/Users/hamed/desktop/gamejam/build/bn_sprite_items_sword.h \
+ C:/Users/hamed/Desktop/gamejam/build/bn_sprite_items_sword.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_sprite_item.h \
- C:/Users/hamed/desktop/gamejam/build/bn_regular_bg_items_stage1.h \
+ C:/Users/hamed/Desktop/gamejam/build/bn_regular_bg_items_stage1.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_regular_bg_item.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_bg_palette_item.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_regular_bg_map_item.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_regular_bg_map_cell.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_regular_bg_tiles_item.h \
- C:/Users/hamed/desktop/gamejam/build/common_variable_8x8_sprite_font.h \
+ C:/Users/hamed/Desktop/gamejam/build/common_variable_8x8_sprite_font.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_sprite_font.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_utf8_characters_map.h \
- C:/Users/hamed/desktop/gamejam/build/bn_sprite_items_common_variable_8x8_font.h \
- C:/Users/hamed/desktop/gamejam/build/bn_sprite_items_man.h
+ C:/Users/hamed/Desktop/gamejam/build/bn_sprite_items_common_variable_8x8_font.h \
+ C:/Users/hamed/Desktop/gamejam/build/bn_sprite_items_man.h
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_core.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_span.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_array.h:
@@ -129,23 +136,30 @@ C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_power_of_two.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_utf8_character.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_bg_palettes.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_palette_effect_type.h:
-C:/Users/hamed/desktop/gamejam/build/common_info.h:
+C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_math.h:
+C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_sin_lut.h:
+C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_reciprocal_lut.h:
+C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_rule_of_three_approximation.h:
+C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_timers.h:
+C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/hw/include/bn_hw_timer_constants.h:
+C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_config_timer.h:
+C:/Users/hamed/Desktop/gamejam/build/common_info.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_span.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_vector.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_sprite_ptr.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_string_view.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_sprite_tiles_ptr.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_regular_bg_ptr.h:
-C:/Users/hamed/desktop/gamejam/build/bn_sprite_items_sword.h:
+C:/Users/hamed/Desktop/gamejam/build/bn_sprite_items_sword.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_sprite_item.h:
-C:/Users/hamed/desktop/gamejam/build/bn_regular_bg_items_stage1.h:
+C:/Users/hamed/Desktop/gamejam/build/bn_regular_bg_items_stage1.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_regular_bg_item.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_bg_palette_item.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_regular_bg_map_item.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_regular_bg_map_cell.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_regular_bg_tiles_item.h:
-C:/Users/hamed/desktop/gamejam/build/common_variable_8x8_sprite_font.h:
+C:/Users/hamed/Desktop/gamejam/build/common_variable_8x8_sprite_font.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_sprite_font.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_utf8_characters_map.h:
-C:/Users/hamed/desktop/gamejam/build/bn_sprite_items_common_variable_8x8_font.h:
-C:/Users/hamed/desktop/gamejam/build/bn_sprite_items_man.h:
+C:/Users/hamed/Desktop/gamejam/build/bn_sprite_items_common_variable_8x8_font.h:
+C:/Users/hamed/Desktop/gamejam/build/bn_sprite_items_man.h:
