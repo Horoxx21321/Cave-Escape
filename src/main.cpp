@@ -46,7 +46,7 @@ namespace
 
         bn::sprite_ptr man = bn::sprite_items::man.create_sprite(0, 0);
         man.set_tiles(bn::sprite_items::man.tiles_item().create_tiles(normalman));
-        bn::optional<bn::sprite_ptr> sword = bn::sprite_items::sword.create_sprite(0, 20);
+        bn::optional<bn::sprite_ptr> sword = bn::sprite_items::sword.create_sprite(40, 40);
         while(! bn::keypad::start_pressed())
         {
 
@@ -73,11 +73,15 @@ namespace
             }
 
             //this here is object testing, whenever an object needs to be seen for itself we must check whether the object functions as intended
-           
-            if(sword.has_value() && ((sqrt(man.x() - sword->x()) + sqrt(man.y() - sword->y())) >= 16))
+            if(sword.has_value())
             {
-               sword.reset();
-               man.set_tiles(bn::sprite_items::man.tiles_item().create_tiles(1));
+             bn::fixed dx = man.x() - sword->x();
+             bn::fixed dy = man.y() - sword->y();
+            if((dx * dx + dy * dy) <= (16 * 16))
+            {
+              sword.reset();
+              man.set_tiles(bn::sprite_items::man.tiles_item().create_tiles(1));
+             }
             }
 
 
@@ -92,8 +96,8 @@ namespace
     };
       bn::sprite_ptr man = bn::sprite_items::man.create_sprite(0, 0);
       man.set_tiles(bn::sprite_items::man.tiles_item().create_tiles(normalman));
-      bn::optional<bn::sprite_ptr> sword = bn::sprite_items::sword.create_sprite(0, 20);
-      bn::point knife_map_position(40,40);
+      bn::optional<bn::sprite_ptr> sword = bn::sprite_items::sword.create_sprite(30, 20);
+      bn::point knife_map_position(200,200);
       bn::vector<bn::sprite_ptr, 32> text_sprites;
       text_generator.generate(-120, -60, info_text_lines[0], text_sprites);
 
@@ -101,14 +105,17 @@ namespace
       constexpr int text_display_frames = 30 * 60; //30 seconds in 60 frames
 
 
-      bn::regular_bg_ptr stage1_bg = bn::regular_bg_items::stage1.create_bg(1, 120);
+      bn::regular_bg_ptr stage1_bg = bn::regular_bg_items::stage1.create_bg(-100, 50);
       bn::point man_map_position(16, 16);
      
       bn::camera_ptr camera = bn::camera_ptr::create(0, 0);
       man.set_camera(camera);
       stage1_bg.set_camera(camera);
-      
-
+       
+      if(sword.has_value())
+      {
+      sword->set_camera(camera);   // add this line
+      }
       while(true){
           
 
@@ -132,18 +139,26 @@ namespace
             }
 
             
-
+       
 
 
 
 
 
             
-            if(sword.has_value() && ((sqrt(man.x() - sword->x())+ sqrt(man.y() - sword->y()) >= 16))){
-               sword.reset();
-               man.set_tiles(bn::sprite_items::man.tiles_item().create_tiles(knifeman));
-            }
-            
+          if(sword.has_value())
+         {
+          bn::fixed dx = man.x() - sword->x();
+          bn::fixed dy = man.y() - sword->y();
+          if((dx * dx + dy * dy) <= (16 * 16))
+            {
+              sword.reset();
+              man.set_tiles(bn::sprite_items::man.tiles_item().create_tiles(1));
+             }
+          }
+
+
+
            if(!text_sprites.empty())
             {
             text_timer_frames++;
