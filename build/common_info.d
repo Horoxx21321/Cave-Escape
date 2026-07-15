@@ -1,5 +1,5 @@
-common_info.o: C:/Users/hamed/Desktop/gamejam/src/common_info.cpp \
- C:/Users/hamed/Desktop/gamejam/build/common_info.h \
+common_info.o: C:/Users/hamed/desktop/gamejam/src/common_info.cpp \
+ C:/Users/hamed/desktop/gamejam/build/common_info.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_span.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_array.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_assert.h \
@@ -54,7 +54,7 @@ common_info.o: C:/Users/hamed/Desktop/gamejam/src/common_info.cpp \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_power_of_two.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_utf8_character.h \
  C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_string_view.h
-C:/Users/hamed/Desktop/gamejam/build/common_info.h:
+C:/Users/hamed/desktop/gamejam/build/common_info.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_span.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_array.h:
 C:/Users/hamed/Documents/Butano/butano-21.7.0/butano/include/bn_assert.h:

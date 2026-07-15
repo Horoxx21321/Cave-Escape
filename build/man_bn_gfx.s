@@ -8,7 +8,7 @@
 @	+ 8 tiles Metatiled by 2x1 not compressed
 @	Total size: 320 + 512 = 832
 @
-@	Time-stamp: 2026-07-09, 15:50:24
+@	Time-stamp: 2026-07-15, 10:38:00
 @	Exported by Cearn's GBA Image Transmogrifier, v0.9.2
 @	( http://www.coranac.com/projects/#grit )
 @
